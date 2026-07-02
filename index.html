@@ -3,231 +3,104 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Тигай Любовь | Legal Services</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: #f2f2f2;
-      line-height: 1.6;
-    }
-
-    header {
-      padding: 32px 8%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      border-bottom: 1px solid #2a2a2a;
-    }
-
-    .logo {
-      font-size: 18px;
-      font-weight: bold;
-      letter-spacing: 0.5px;
-    }
-
-    nav a {
-      color: #f2f2f2;
-      text-decoration: none;
-      margin-left: 24px;
-      font-size: 14px;
-    }
-
-    nav a:hover {
-      color: #d8a7b1;
-    }
-
-    .hero {
-      padding: 90px 8%;
-      max-width: 1000px;
-    }
-
-    .hero h1 {
-      font-size: 48px;
-      margin-bottom: 16px;
-      line-height: 1.1;
-    }
-
-    .hero p {
-      font-size: 19px;
-      color: #c9c9c9;
-      max-width: 720px;
-    }
-
-    .accent {
-      color: #d8a7b1;
-    }
-
-    .section {
-      padding: 60px 8%;
-      border-top: 1px solid #2a2a2a;
-    }
-
-    .section h2 {
-      font-size: 30px;
-      margin-bottom: 24px;
-    }
-
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .card {
-      background: #181818;
-      padding: 24px;
-      border-radius: 16px;
-      border: 1px solid #2a2a2a;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #ffffff;
-    }
-
-    .card p, li {
-      color: #c9c9c9;
-    }
-
-    ul {
-      padding-left: 18px;
-    }
-
-    .contact {
-      background: #181818;
-      border-radius: 18px;
-      padding: 32px;
-      max-width: 600px;
-    }
-
-    .button {
-      display: inline-block;
-      margin-top: 18px;
-      padding: 12px 22px;
-      background: #d8a7b1;
-      color: #0f0f0f;
-      text-decoration: none;
-      border-radius: 30px;
-      font-weight: bold;
-    }
-
-    footer {
-      padding: 30px 8%;
-      color: #888;
-      font-size: 14px;
-      border-top: 1px solid #2a2a2a;
-    }
-  </style>
+  <title>Tigay Legal | Corporate & Commercial Lawyer</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <header>
-    <div class="logo">Tigay Lyubov</div>
+  <header class="header">
+    <a class="brand" href="#top">TIGAY LEGAL</a>
     <nav>
-      <a href="#about">Обо мне</a>
-      <a href="#services">Услуги</a>
-      <a href="#cases">Статьи / Кейсы</a>
-      <a href="#contacts">Контакты</a>
+      <a href="#services" data-ru="Услуги" data-en="Services">Услуги</a>
+      <a href="#cases" data-ru="Статьи / Кейсы" data-en="Articles / Cases">Статьи / Кейсы</a>
+      <a href="#contacts" data-ru="Контакты" data-en="Contacts">Контакты</a>
+      <button id="langBtn" class="lang-btn">EN</button>
     </nav>
   </header>
 
-  <section class="hero" id="about">
-    <h1>Юридическое сопровождение <span class="accent">бизнеса</span></h1>
-    <p>
-      Тигай Любовь Константиновна / Tigay Lyubov Konstantinovna.
-      Оказываю юридическую поддержку компаниям, предпринимателям и иностранным клиентам
-      по вопросам ведения бизнеса в Узбекистане.
-    </p>
-    <p>Опыт работы — с 2017 года. Рабочие языки: русский, английский.</p>
-    <a class="button" href="mailto:tigay.lyubov@gmail.com">Связаться</a>
-  </section>
-
-  <section class="section" id="services">
-    <h2>Услуги</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Корпоративное сопровождение</h3>
-        <ul>
-          <li>Регистрация ООО</li>
-          <li>Перерегистрация ООО</li>
-          <li>Корпоративные изменения</li>
-          <li>Консультации по структуре бизнеса</li>
-        </ul>
+  <main id="top">
+    <section class="hero reveal">
+      <p class="eyebrow" data-ru="Corporate • Commercial • International" data-en="Corporate • Commercial • International">Corporate • Commercial • International</p>
+      <h1 data-ru="Юридическое сопровождение бизнеса в Узбекистане" data-en="Legal Counsel for Business in Uzbekistan">Юридическое сопровождение бизнеса в Узбекистане</h1>
+      <p class="lead" data-ru="Тигай Любовь Константиновна. Практическая юридическая поддержка компаний, предпринимателей и иностранных клиентов с 2017 года." data-en="Tigay Lyubov Konstantinovna. Practical legal support for companies, entrepreneurs and foreign clients since 2017.">Тигай Любовь Константиновна. Практическая юридическая поддержка компаний, предпринимателей и иностранных клиентов с 2017 года.</p>
+      <div class="hero-actions">
+        <a class="button" href="mailto:tigay.lyubov@gmail.com" data-ru="Запросить консультацию" data-en="Request consultation">Запросить консультацию</a>
+        <a class="button ghost" href="#services" data-ru="Смотреть услуги" data-en="View services">Смотреть услуги</a>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Иностранные компании</h3>
-        <ul>
-          <li>Аккредитация иностранных представительств</li>
-          <li>Сопровождение иностранных клиентов</li>
-          <li>Подготовка документов для работы в Узбекистане</li>
-        </ul>
+    <section class="section reveal" id="about">
+      <div class="section-title">
+        <p data-ru="О практике" data-en="About practice">О практике</p>
+        <h2 data-ru="Юрист для операционной деятельности бизнеса" data-en="Business-focused legal support">Юрист для операционной деятельности бизнеса</h2>
       </div>
+      <p class="wide-text" data-ru="Работаю с корпоративными процедурами, коммерческими договорами, документами для рекламных и digital-проектов, иностранными представительствами и текущими правовыми задачами бизнеса." data-en="I work with corporate procedures, commercial contracts, documents for advertising and digital projects, foreign representative offices and day-to-day legal matters of business.">Работаю с корпоративными процедурами, коммерческими договорами, документами для рекламных и digital-проектов, иностранными представительствами и текущими правовыми задачами бизнеса.</p>
+    </section>
 
-      <div class="card">
-        <h3>Договорная работа</h3>
-        <ul>
-          <li>Договоры услуг</li>
-          <li>Договоры подряда</li>
-          <li>Агентские договоры</li>
-          <li>Документы для рекламных и digital-проектов</li>
-        </ul>
+    <section class="section reveal" id="services">
+      <div class="section-title">
+        <p data-ru="Направления" data-en="Services">Направления</p>
+        <h2 data-ru="Что входит в сопровождение" data-en="Scope of work">Что входит в сопровождение</h2>
       </div>
-
-      <div class="card">
-        <h3>Контент и персональные данные</h3>
-        <ul>
-          <li>Договоры на создание изображений</li>
-          <li>Согласия физических лиц</li>
-          <li>Документы по использованию изображения</li>
-          <li>Сопровождение рекламных проектов</li>
-        </ul>
+      <div class="grid">
+        <article class="card">
+          <h3 data-ru="Корпоративные процедуры" data-en="Corporate procedures">Корпоративные процедуры</h3>
+          <p data-ru="Регистрация и перерегистрация ООО, корпоративные изменения, подготовка решений и сопутствующих документов." data-en="LLC registration and re-registration, corporate changes, preparation of resolutions and related documents.">Регистрация и перерегистрация ООО, корпоративные изменения, подготовка решений и сопутствующих документов.</p>
+        </article>
+        <article class="card">
+          <h3 data-ru="Иностранные представительства" data-en="Foreign representative offices">Иностранные представительства</h3>
+          <p data-ru="Аккредитация иностранных представительств и юридическое сопровождение иностранных клиентов в Узбекистане." data-en="Accreditation of foreign representative offices and legal support for foreign clients in Uzbekistan.">Аккредитация иностранных представительств и юридическое сопровождение иностранных клиентов в Узбекистане.</p>
+        </article>
+        <article class="card">
+          <h3 data-ru="Договорная работа" data-en="Commercial contracts">Договорная работа</h3>
+          <p data-ru="Договоры услуг, подряда, агентские договоры, договоры для операционной и проектной деятельности." data-en="Service, contractor and agency agreements, as well as contracts for operating and project-based activity.">Договоры услуг, подряда, агентские договоры, договоры для операционной и проектной деятельности.</p>
+        </article>
+        <article class="card">
+          <h3 data-ru="Контент и согласия" data-en="Content and consents">Контент и согласия</h3>
+          <p data-ru="Договоры на создание изображений, согласия физических лиц, документы по использованию изображения и персональных данных." data-en="Image creation agreements, individual consents, documents for use of image and personal data.">Договоры на создание изображений, согласия физических лиц, документы по использованию изображения и персональных данных.</p>
+        </article>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="section" id="cases">
-    <h2>Статьи / Кейсы</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Регистрация ООО в Узбекистане</h3>
-        <p>
-          Краткий обзор процедуры, документов и важных нюансов при создании компании.
-        </p>
+    <section class="section reveal" id="cases">
+      <div class="section-title">
+        <p data-ru="Knowledge base" data-en="Knowledge base">Knowledge base</p>
+        <h2 data-ru="Статьи и кейсы" data-en="Articles and cases">Статьи и кейсы</h2>
       </div>
-
-      <div class="card">
-        <h3>Договоры для бизнеса</h3>
-        <p>
-          На что обращать внимание при подготовке договоров услуг, подряда и агентских соглашений.
-        </p>
+      <div class="grid three">
+        <article class="case-card">
+          <span>01</span>
+          <h3 data-ru="Регистрация ООО в Узбекистане" data-en="LLC registration in Uzbekistan">Регистрация ООО в Узбекистане</h3>
+          <p data-ru="Краткая заметка о процедуре, документах и практических нюансах." data-en="A short note on procedure, documents and practical details.">Краткая заметка о процедуре, документах и практических нюансах.</p>
+        </article>
+        <article class="case-card">
+          <span>02</span>
+          <h3 data-ru="Договоры для бизнеса" data-en="Business contracts">Договоры для бизнеса</h3>
+          <p data-ru="На что обращать внимание при услугах, подряде и агентских соглашениях." data-en="Key points in service, contractor and agency agreements.">На что обращать внимание при услугах, подряде и агентских соглашениях.</p>
+        </article>
+        <article class="case-card">
+          <span>03</span>
+          <h3 data-ru="Digital и рекламные проекты" data-en="Digital and advertising projects">Digital и рекламные проекты</h3>
+          <p data-ru="Документы для изображений, съёмок, согласий и коммерческого контента." data-en="Documents for images, filming, consents and commercial content.">Документы для изображений, съёмок, согласий и коммерческого контента.</p>
+        </article>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Рекламные и digital-проекты</h3>
-        <p>
-          Юридические документы для съёмок, изображений, согласий физических лиц и контента.
-        </p>
+    <section class="section contact-section reveal" id="contacts">
+      <div>
+        <p class="eyebrow" data-ru="Контакты" data-en="Contacts">Контакты</p>
+        <h2>Тигай Любовь Константиновна</h2>
+        <p>Tigay Lyubov Konstantinovna</p>
+        <p data-ru="Рабочие языки: русский, английский." data-en="Working languages: Russian, English.">Рабочие языки: русский, английский.</p>
       </div>
-    </div>
-  </section>
+      <div class="contact-card">
+        <a href="tel:+998909590639">+998 90 959 06 39</a>
+        <a href="mailto:tigay.lyubov@gmail.com">tigay.lyubov@gmail.com</a>
+        <a class="button" href="mailto:tigay.lyubov@gmail.com" data-ru="Написать" data-en="Send email">Написать</a>
+      </div>
+    </section>
+  </main>
 
-  <section class="section" id="contacts">
-    <h2>Контакты</h2>
-    <div class="contact">
-      <p><strong>Тигай Любовь Константиновна</strong></p>
-      <p>Tigay Lyubov Konstantinovna</p>
-      <p>Телефон: <a href="tel:+998909590639" style="color:#d8a7b1;">+998 90 959 06 39</a></p>
-      <p>Email: <a href="mailto:tigay.lyubov@gmail.com" style="color:#d8a7b1;">tigay.lyubov@gmail.com</a></p>
-      <a class="button" href="mailto:tigay.lyubov@gmail.com">Написать на email</a>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 Tigay Lyubov Konstantinovna. Legal services.
-  </footer>
-
+  <footer>© 2026 Tigay Legal. Uzbekistan.</footer>
+  <script src="script.js"></script>
 </body>
-</html> 
+</html>
